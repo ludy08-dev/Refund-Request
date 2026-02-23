@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Status</title>
+
+    <!-- Correct way to import CSS -->
+    <link rel="stylesheet" href="refund.css">
+</head>
+<body>
+
+    <a href="#" class="back-btn">← Back</a>
+
+    <div class="status-card">
+        <p class="status-message">
+            ✅ Your receipt has been submitted,<br>
+            Please wait for approval to proceed
+        </p>
+
+        <p class="status-label">STATUS</p>
+
+        <div class="status-row">
+            <div class="spinner"></div>
+            <span class="status-text" id="statusText">Pending</span>
+        </div>
+
+        <button id="proceedBtn" class="proceed-btn" disabled>Proceed</button>
+    </div>
+
+    <button class="logout-btn">Log out</button>
+
+    <!-- External JavaScript -->
+    <script src="refund_waiting.js"></script>
+</body>
+</html>

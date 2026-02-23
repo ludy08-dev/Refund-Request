@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#00c6ff, #000046);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    margin-top: 80px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.image-preview {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #00e1ff;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.logout-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: yellow;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.status-card {
+    background: #ffffff;
+    width: 360px;
+    padding: 25px 30px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-top: 120px;
+}
+
+.status-message {
+    font-size: 15px;
+    font-weight: 600;
+    color: #003056;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.status-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.status-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.status-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Simple loading spinner */
+.spinner {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #e0e0e0;
+    border-top-color: #00c853;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Proceed button (disabled look like in the design) */
+.proceed-btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: not-allowed;
+    background: #e0f5ff;
+    color: #9db4c0;
+}
+
+/* when enabled (JS can toggle this class) */
+.proceed-btn.enabled {
+    background: #00e1ff;
+    color: #000;
+    cursor: pointer;
+}
